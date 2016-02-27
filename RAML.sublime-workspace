@@ -1,0 +1,723 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bar",
+				"bar_thing"
+			],
+			[
+				"data",
+				"data_key"
+			],
+			[
+				"don",
+				"done_testing"
+			],
+			[
+				"to",
+				"today"
+			],
+			[
+				"Da",
+				"DateTime"
+			],
+			[
+				"Mime",
+				"MIME::Lite"
+			],
+			[
+				"orde",
+				"order_data"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"cart",
+				"cart_data	(Orders.pm)"
+			],
+			[
+				"cu",
+				"customer_ip"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"service",
+				"service_info"
+			],
+			[
+				"op",
+				"op_environment	(Rosetta.pm)"
+			],
+			[
+				"clie",
+				"client_ip"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"in",
+				"in_key"
+			],
+			[
+				"bas",
+				"base_path	(Rosetta.pm)"
+			],
+			[
+				"wa",
+				"warnings	(release-tool.pl)"
+			],
+			[
+				"fe",
+				"feature	(release-tool.pl)"
+			],
+			[
+				"S",
+				"START_SERVICES"
+			],
+			[
+				"star",
+				"start_live"
+			],
+			[
+				"SE",
+				"SERVER_SETTINGS"
+			],
+			[
+				"prop",
+				"property_name"
+			],
+			[
+				"p",
+				"property"
+			],
+			[
+				"require",
+				"required"
+			],
+			[
+				"las",
+				"last_var"
+			],
+			[
+				"sch",
+				"schema"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"o",
+				"obj"
+			],
+			[
+				"mo",
+				"module"
+			],
+			[
+				"prod",
+				"production	(Rosetta.pm)"
+			],
+			[
+				"car",
+				"cart_data	(Orders.pm)"
+			],
+			[
+				"ur",
+				"url_data"
+			],
+			[
+				"pa",
+				"payload	(Customers.pm)"
+			],
+			[
+				"return",
+				"return_url	(Paypal.pm)"
+			],
+			[
+				"pay",
+				"paypal	(Orders.pm)"
+			],
+			[
+				"inp",
+				"input_args"
+			],
+			[
+				"seri",
+				"serialized_data"
+			],
+			[
+				"pr",
+				"prop"
+			],
+			[
+				"htt",
+				"http_method"
+			],
+			[
+				"mak",
+				"make_schema_name"
+			],
+			[
+				"end",
+				"endpoint"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"h",
+				"http_method"
+			],
+			[
+				"schem",
+				"schemas"
+			],
+			[
+				"sche",
+				"schema_name"
+			],
+			[
+				"sc",
+				"schema_name"
+			],
+			[
+				"doc",
+				"doclink"
+			],
+			[
+				"cli",
+				"client_method"
+			],
+			[
+				"a",
+				"args"
+			],
+			[
+				"su",
+				"summary"
+			],
+			[
+				"rel",
+				"release_story"
+			],
+			[
+				"aut",
+				"auth_as"
+			],
+			[
+				"int",
+				"internal_authentication"
+			],
+			[
+				"op_",
+				"op_environment	(sam-release-request.pl)"
+			],
+			[
+				"n",
+				"namespaces"
+			],
+			[
+				"jira",
+				"jira_user"
+			],
+			[
+				"log",
+				"log_args"
+			],
+			[
+				"lo",
+				"log_dir"
+			],
+			[
+				"log_",
+				"log_level"
+			],
+			[
+				"cl",
+				"_clinet_args"
+			],
+			[
+				"Rosetta",
+				"Rosetta::Pebble"
+			],
+			[
+				"_",
+				"_clients"
+			],
+			[
+				"tr",
+				"tracking_id"
+			],
+			[
+				"tracking",
+				"tracking_id	(Logger.pm)"
+			],
+			[
+				"sub",
+				"sub	Function"
+			],
+			[
+				"cons",
+				"constant"
+			],
+			[
+				"meth",
+				"method_type"
+			],
+			[
+				"method_a",
+				"method_args"
+			],
+			[
+				"req",
+				"request_args"
+			],
+			[
+				"fore",
+				"foreach"
+			],
+			[
+				"Ro",
+				"Rosetta::Pebble	(Logger.pm)"
+			],
+			[
+				"prd",
+				"production	(Config.pm)"
+			],
+			[
+				"co",
+				"code"
+			],
+			[
+				"add",
+				"add_error"
+			],
+			[
+				"has",
+				"has_errors"
+			],
+			[
+				"D",
+				"Dumper	(Logger.pm)"
+			],
+			[
+				"conf",
+				"config_defaults"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"exp",
+				"exp_time"
+			],
+			[
+				"hash",
+				"HASH"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/squinlan/devel/RAML"
+	],
+	"file_history":
+	[
+		"/Users/squinlan/devel/rosetta/db/create_schemas.sh",
+		"/Users/squinlan/devel/rosetta/db/patches-v1/71-TP-9875-jdi-reseller-db-patch.sql",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/SSL/API/Certificate.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/SSL/API.pm",
+		"/Users/squinlan/devel/rosetta/bin/server-utils/update_required_modules.pl",
+		"/Users/squinlan/devel/rosetta/bin/dev-utils/new-provider.pl",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/t/Role/01-Cart.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/10-inflate-deflate.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/ProductServices/PlaceOrder.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/Role/Endpoint/Cart.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/API/Orders.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/Role/Endpoint/Paypal.pm",
+		"/Users/squinlan/devel/rosetta/server_instances/product/lib/ProductServices.pm",
+		"/Users/squinlan/devel/rosetta/server_instances/eds/lib/DomainServices.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/DoesJSON.pm",
+		"/Users/squinlan/devel/rosetta/bin/test-client.pl",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/TestUtils.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/API/Info.pm",
+		"/Users/squinlan/devel/rosetta/bin/info/kill-bill.pl",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/API.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/Authentication.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/TestHelper.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Session.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/API/Server.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/API/01-Auth.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/01-Session.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/ProductServices/PayPal/BuildURL.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/API/Affiliate.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/t/API/02-vDeck-Affiliate-Get.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/ProductServices/Affiliate.pm",
+		"/Users/squinlan/devel/rosetta/server_instances/product/lib/ProductServices/Router.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/t/05-Affiliate.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/t/10-TP-9600-generate-sanitized-account-name.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Ecwid/t/10-TP-6085-endpoint-auto-load-account.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/t/API/01-Account_PUT.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/t/API/01-Account.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/t/00-load.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/t/00-load.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/Products.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/API/Products.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/API/Affiliates.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Affiliate.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/SSO.pm",
+		"/Users/squinlan/devel/rosetta/bin/server-utils/ht-check",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/MultiMethodClient.pm",
+		"/Users/squinlan/devel/rosetta/bin/dev-utils/new-method.pl",
+		"/Users/squinlan/devel/rosetta/bin/dev-utils/new-endpoint.pl",
+		"/Users/squinlan/devel/rosetta/bin/server-utils/release-tool.pl",
+		"/Users/squinlan/devel/rosetta/conf/nginx/sites-available/eig-rosetta.com",
+		"/Users/squinlan/devel/rosetta/templates/provider.conf.tt",
+		"/Users/squinlan/devel/rosetta/bin/server-utils/ht-stop",
+		"/Users/squinlan/devel/rosetta/bin/server-utils/ht-start",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/Authenticate.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/ResetPassword.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/ClientAPI.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/Method.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/Config.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/Customers/SSO.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/t/00-load.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/Customers/ResetPassword.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/Customers/Products.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/API/Admin/Domain.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/Create.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/SSO.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices.pm",
+		"/Users/squinlan/devel/rosetta/bin/dev-utils/generate-method-registry.pl",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/t/API/Admin/01-Domain.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Validation/t/API/01-Schema-create-revert-flow.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/SSL/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Facebook/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Validation/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/API/SSO.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Yext/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/API.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/API.pm",
+		"/Users/squinlan/devel/rosetta/templates/method-registry/MethodRegistry.pm.tt",
+		"/Users/squinlan/devel/rosetta/server_instances/facebook/lib/Facebook.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/RegistryBuilder.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/JSONSchema.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/API/05-defaults-validation.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/Customers.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/CustomerManagement/API/ValidateCredentials.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/Role/01-Redis.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/API/01-Info.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/API/00-core-validation.t",
+		"/Users/squinlan/devel/rosetta/bin/dev-utils/release-request.pl",
+		"/Users/squinlan/devel/rosetta/templates/method-registry/endpoints.tt",
+		"/Users/squinlan/devel/rosetta/bin/eds/kill-bill.pl",
+		"/Users/squinlan/devel/rosetta/bin/ecwid/kill-bill.pl",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/BuildURL2.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/Customer/GetInfo2.pm",
+		"/Users/squinlan/devel/rosetta/conf/nginx/sites-available/dev-rosetta.com",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/t/Role/01-JSON.t",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ProductServices/ClientAPI.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/DomainServices/JSONSchema/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/DomainServices/ClientAPI/External/DomainSearch.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/API/Account/Apps.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/Schema/Result/App.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/DomainServices/API/Search.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/vDeck/ClientAPI/External/ProductServices/AuthCard.pm",
+		"/Users/squinlan/devel/rosetta/conf/vdeck.json",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/ClientAPI/Internal.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Validation/Role/Endpoint/Schemas.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Yext/ClientAPI/Method.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Parser/JSON.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Rosetta/Role/TransactionHandling.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/Schema/Result/Migration.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/Schema/Result/MigrationEmail.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/ClientAPI/External/Migration/Gmail/Upload.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/API/Migration.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/GoogleApps/API/Migration/Jobs.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Facebook/ClientAPI/External/UpdatePage.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/Facebook/ClientAPI/External/AddPage.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/ClientAPI/Method.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/ConstantContact/ClientAPI/Method.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/AppMachine/ClientAPI/External/GetPurchasedPlans.pm",
+		"/Users/squinlan/devel/rosetta/perl_lib/EIG/DomainServices/API.pm"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_check_certificate_status",
+			"1",
+			"_check_certificate_status",
+			"Templ",
+			"1",
+			"account_user_post",
+			"is_admin",
+			" {4}",
+			"request",
+			"test_script",
+			"KEY_MAP",
+			"configure",
+			"session_authentication",
+			"active",
+			"hypno",
+			"checkout",
+			"alias ",
+			"alias",
+			"correct error",
+			"DELETE",
+			"admin_domain_get",
+			"account_subscription_plan_put",
+			"account_user_alias",
+			"account_user_alias_",
+			"account_user_delete",
+			"_get_api_calls_for_registry",
+			"class",
+			"admin",
+			"providers",
+			"PORT_PROVIDER",
+			"_chars",
+			"brand_baseclass",
+			"json",
+			"JSON",
+			"_sync_purchased_apps",
+			"property",
+			"_get_authentication_for_auth_call",
+			"authen",
+			"not_implemented",
+			"use_trial_plan",
+			"make_admin",
+			"_get_session_params",
+			"auth_as",
+			"_start_session",
+			"_get_session_params",
+			"fields",
+			"JIRA",
+			"$JIRA",
+			"secret",
+			"parse_fail",
+			"LOGGER_ARGS",
+			"_clinet_args",
+			"HTTP",
+			"\\$self->HTTP_(\\w+)",
+			"$self->HTTP_",
+			" HTTP_",
+			"(\\d+);",
+			"use constant ",
+			"use constant",
+			"any",
+			"MethodRegistry",
+			"^method",
+			"\\((\\d+)\\)",
+			"Moo",
+			"JSON",
+			"is_admin",
+			"bool",
+			"boolean",
+			"GET",
+			"rm",
+			"gif",
+			"Jay%20Lamport"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"  ",
+			"ARG_MAP",
+			"alt   ",
+			"alt  ",
+			"BRAND_BASECLASS",
+			"_client_args",
+			"\\$self->http('\\1')",
+			" ",
+			"\\1,",
+			"    ",
+			"my",
+			"sub",
+			"\\1;",
+			"JayLamport"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RAML.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
