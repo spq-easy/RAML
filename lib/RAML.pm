@@ -19,6 +19,19 @@ Version 0.01
 
 our $VERSION = '0.01';
 
+use constant HTTP_METHODS => qw(post put patch get delete);
+
+
+# Translation map for RAML spec terms to internal attribute name
+# Also serves as a whitelist of supported fields
+my %NAME_MAP = (
+    resourceTypes => 'types',
+    version       => 'version',
+    title         => 'title',
+    traits        => 'traits',
+    baseUri       => 'base_uri',
+    schemas       => 'schemas',
+);
 
 =head1 SYNOPSIS
 
@@ -182,18 +195,6 @@ sub BUILD {
     $self->_process_spec($spec);
 }
 
-
-# Translation map for RAML spec terms to internal attribute name
-# Also serves as a whitelist of supported fields
-my %NAME_MAP = (
-    resourceTypes => 'types',
-    version       => 'version',
-    title         => 'title',
-    traits        => 'traits',
-    baseUri       => 'base_uri',
-    schemas       => 'schemas',
-);
-
 # Private
 sub _process_spec {
     my $self = shift;
@@ -238,14 +239,12 @@ sub _process_spec {
             if (ref($item) ne 'HASH') {
                 warn "Unsupported item type in list: $item";
                 $self->_set_valid(0);
-                splice(@{$attribs{$listname}}, $i, 1);
                 next;
             }
 
             if (scalar(keys %{$item}) != 1) {
                 warn "Too may elements within item: " . join(', ', keys %{$item});
                 $self->_set_valid(0);
-                splice(@{$attribs{$listname}}, $i, 1);
                 next;
             }
 
@@ -260,16 +259,15 @@ sub _process_spec {
             );
 
             if ($data) {
-                #my $setter = '_set_' . $listname;
                 $self->$listname->{$key} = $data;
-                # Replace the current item with the data node
-                #splice(@{$attribs{$listname}}, $i, 1, { $key => $data } );
-            }
-            else {
-                # Remove the offending element
-                #splice(@{$attribs{$listname}}, $i, 1);
             }
         }
+    }
+
+    # Now that we've parsed all the top level items, lets create the resource
+    # objects
+    foreach my $key (keys %resources) {
+        $self->_compile_resource($key, $resources{$key});
     }
 }
 
@@ -297,6 +295,75 @@ sub _read_from_file {
     }
 
     return $data;
+}
+
+sub _compile_resource {
+    my $self     = shift;
+    my $uri      = shift;
+    my $resource = shift;
+
+    my $path = exists($resource->{parent_path})
+        ? $resource->{parent_path} . $uri
+        : $uri;
+
+
+    # Go through the resource data and compile the parameters needed to instantiate
+    # new Endpoint objects. As nested resources are discovered, set the parent path
+    # within that data and call this method such that we recurse down the entire tree,
+    # keeping track of parantage as we go.
+    foreach my $key (keys %{$resource}) {
+        if ($key =~ m{^/}) {
+            $resource->{$key}{parent_path} = $path;
+            $self->_compile_resource($key, $resource->{$key});
+            next;
+        }
+
+        # We'll handle endpoints specifically at the end
+        next if grep {$key = $_} HTTP_METHODS;
+
+        # TODO: Massage the rest of the data
+        # TBD: This might be more appropriate to handle by going though each
+        # element specifically so expansion is properly handled.
+    }
+
+    # my $res_obj = RAML::Resource->new($resource); ?
+    # TBD: Easier (better?) to make a resource object?
+    # TBD: If so, does the resource have compile_endpoint? Or do endpoints
+    # contain their resource object?
+
+    foreach my $method (HTTP_METHODS) {
+        next unless exists($resource->{$method});
+
+        $self->_compile_endpoint($method, $path, $resource);
+    }
+}
+
+sub _compile_endpoint {
+    my $self     = shift;
+    my $method   = shift;
+    my $path     = shift;
+    my $resource = shift;
+
+    # Generate a name
+    my $name = $method . $path;
+    $name =~ s{/}{_}g; # /path/to becomes _path_to
+    $name =~ s/\W//g; # strip off {} around vars, etc
+
+    # Start collecting the arguments we'll be using to create the object
+    my %params = (
+        name        => $name,
+        path        => $path,
+        description => delete($resource->{$method}{description}),
+    );
+
+    # TBD: body
+    # TBD: responses
+    # TBD: is
+    # TBD: queryParameters
+    # TBD: Others?
+
+    my $endpoint = RAML::Endpoint->new(\%params);
+    $self->endpoints->{$name} = $endpoint;
 }
 
 

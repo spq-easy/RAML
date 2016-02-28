@@ -42,6 +42,10 @@ You can also look for information at:
     Search CPAN
         http://search.cpan.org/dist/RAML/
 
+TEST FILES
+
+The jukebox-* files under t/resources are adapted from the raml.org tutorials.
+Contact http://raml.org for additional licensing information on those files.
 
 LICENSE AND COPYRIGHT
 
