@@ -339,6 +339,44 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "t/resources/jukebox-api.raml",
+			"settings":
+			{
+				"buffer_size": 6279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  Thanks for installing Git Gutter!!!\n  \n  👣 Follow me: @jisaacks\n  \n  \n  😍 Love Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  \n  --> $10 OFF Sublime Text Power User.\n  \n  Become amazing with Sublime Text with this book + video series. 📖📹\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  💰 Use the coupon code GITGUTTER for $10 off 💵\n  \n  \n  --> $10 OFF React for Beginners\n  \n  Upgrade your JavaScript skills. \n  Learn React.js in just a couple of afternoons. 📹\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  💰 Use the coupon code GITGUTTER for $10 off 💵\n  \n  \n  Join 3,000 other developers already learning React.js with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          SublimeLinter 3 is NOT a drop-in replacement for\n          earlier versions.\n  \n          Linters *NOT* included with SublimeLinter 3, \n          they must be installed separately.\n  \n          The settings are different.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://www.sublimelinter.com\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  Hundreds of hours have been spent writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n\n\nPerl Completions\n----------------\n\n  Perl Completions\n  ================\n  \n  A Sublime text package that displays several completions for the PERL language methods\n  \n  Usage\n  -----\n  \n  normal typing of method names shows methods for modules. Note that the amount of * displayed next ot the func specifies how many arguments the function takes.\n  \n  Contributing\n  ------------\n  \n  All contributions are welcome. fork Perl Completions on Github at <https://github.com/tushortz/Perl-Completions> and create a pull request. Any suggestions or bugs, please let me know.\n  \n  Licence\n  -------\n  © 2016 Taiwo Kareem | taiwo.kareem36@gmail.com.\n  \n  Read license.txt\n  \n  Acknowledgements\n  ----------------\n  I’d first like to say a very big thank you to God my creator. Without him, this wouldn’t be possible.\n",
+			"settings":
+			{
+				"buffer_size": 3344,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "lib/RAML.pm",
+			"settings":
+			{
+				"buffer_size": 13440,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "package RAML::Endpoint;\n\n=head1 SYNOPSIS\n\nTBD: Methods\n* method\n* path\n* name\n* schema\n* traits\n\n=head1 AUTHOR\n\nSean P Quinlan, C<< <seanq at cpan.org> >>\n\n=head1 BUGS\n\nPlease report any bugs or feature requests to C<bug-raml at rt.cpan.org>, or through\nthe web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=RAML>.  I will be notified, and then you'll\nautomatically be notified of progress on your bug as I make changes.\n\n\n\n\n=head1 SUPPORT\n\nYou can find documentation for this module with the perldoc command.\n\n    perldoc RAML::Endpoint\n\n\nYou can also look for information at:\nhttp://raml.org\n\n=over 4\n\n=item * RT: CPAN's request tracker (report bugs here)\n\nL<http://rt.cpan.org/NoAuth/Bugs.html?Dist=RAML>\n\n=item * AnnoCPAN: Annotated CPAN documentation\n\nL<http://annocpan.org/dist/RAML>\n\n=item * CPAN Ratings\n\nL<http://cpanratings.perl.org/d/RAML>\n\n=item * Search CPAN\n\nL<http://search.cpan.org/dist/RAML/>\n\n=back\n\n\n=head1 ACKNOWLEDGEMENTS\n\n\n=head1 LICENSE AND COPYRIGHT\n\nCopyright 2016 Sean P Quinlan.\n\nThis program is free software; you can redistribute it and/or modify it\nunder the terms of the the Artist::Endpointrtistic_license_2_0>\n\nAny use, modification, and distribution of the Standard or Modified\nVersions is governed by this Artistic License. By using, modifying or\ndistributing the Package, you accept this license. Do not use, modify,\nor distribute the Package, if you do not accept this license.\n\nIf your Modified Version has been derived from a Modified Version made\nby someone other than you, you are nevertheless required to ensure that\nyour Modified Version complies with the requirements of this license.\n\nThis license does not grant you the right to use any trademark, service\nmark, tradename, or logo of the Copyright Holder.\n\nThis license includes the non-exclusive, worldwide, free-of-charge\npatent license to make, have made, use, offer to sell, sell, import and\notherwise transfer the Package with respect to any patent claims\nlicensable by the Copyright Holder that are necessarily infringed by the\nPackage. If you institute patent litigation (including a cross-claim or\ncounterclaim) against any party alleging that the Package constitutes\ndirect or contributory patent infringement, then this Artistic License\nto you shall terminate on the date that such litigation is filed.\n\nDisclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER\nAND CONTRIBUTORS \"AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\nPURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY\nYOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR\nCONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR\nCONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n=cut\n\n1; # End of RAML::Endpoint",
+			"file": "lib/RAML/Endpoint.pm",
+			"file_size": 2825,
+			"file_write_time": 131012660380000000,
+			"settings":
+			{
+				"buffer_size": 2897,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -360,13 +398,14 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 521.0
+		"width": 467.0
 	},
 	"console":
 	{
 		"height": 125.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -381,7 +420,11 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/squinlan/devel/RAML"
+		"/Users/squinlan/devel/RAML",
+		"/Users/squinlan/devel/RAML/lib",
+		"/Users/squinlan/devel/RAML/lib/RAML",
+		"/Users/squinlan/devel/RAML/t",
+		"/Users/squinlan/devel/RAML/t/resources"
 	],
 	"file_history":
 	[
@@ -516,7 +559,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -633,14 +676,139 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "t/resources/jukebox-api.raml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2566,
+								2566
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"tab_width": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/RAML.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2149,
+								2149
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/ModernPerl/ModernPerl.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/RAML/Endpoint.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ModernPerl/ModernPerl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -677,7 +845,7 @@
 	"project": "RAML.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

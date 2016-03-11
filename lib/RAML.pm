@@ -37,13 +37,23 @@ my %NAME_MAP = (
 
 RAML provides a full representation of a RESTful API as documented in a .raml file.
 The goal is to fully load the API's specification, including loading all the
-linked resources, and return an object with fully expanded resources (Endpoints).
+linked resources. The act of loading will also do some high level initial validation.
+
+TBD: Do full expansion on load, or only on demand? (top level includes will always
+be immediately loaded)
+
+TBD: Method list
+* expand
+* endpoints
+* resources ?
+* to_raml
+* on a resource, OPTIONS?
 
     use RAML;
 
     my $api = RAML->new('api.raml');
     
-    my $resources = $api->endpoints;
+    my $resources = $api->resources;
 
     foreach my $resource (@{$resources}) {
         print $resource->path; # /foo/{thing}/bar
@@ -56,18 +66,10 @@ linked resources, and return an object with fully expanded resources (Endpoints)
 
 =head1 ATRIBUTES
 
-=head2 spec
-
-The fully interpolated RAML spcification as text. Please note that as this is
-re-serialized from a data structure the order of elements can not be gauranteed.
-
-=cut
-has spec => (
-    is => 'lazy',
-);
-
-
 =head2 valid
+
+Is the RAML considered valid. 
+TBD: Make this private and expose with is_valid method instead?
 
 =cut
 has valid => (
@@ -77,6 +79,8 @@ has valid => (
 
 
 =head2 version
+
+API version
 
 =cut
 has version => (
@@ -102,7 +106,7 @@ has base_uri => (
     lazy => 1,
 );
 
-
+# TBD: Is there any reason to expose the types, schemas, and traits stores?
 =head2 types
 
 =cut
@@ -195,6 +199,16 @@ sub BUILD {
     $self->_process_spec($spec);
 }
 
+#
+# So a lot of the elements can occur and or be refrenced in multiple levels as
+# well as loaded from files in !includes. We could use an object for each type
+# with each its own specialized parsing logic; but I'd like to avoid having 8000
+# nested objects in each schema, and would prefer a registry of reusable elements
+#
+# Types seem particularly complex, allowing multiple inheritance, etc. But I 
+# think we can skip some of that for phase 1 and only support json-schema 
+#
+
 # Private
 sub _process_spec {
     my $self = shift;
@@ -224,12 +238,22 @@ sub _process_spec {
     # Now that we have the parts broken down, start populating our attributes
 
     # Some things are simple
-    $self->_set_version( $attribs{version} )   if $attribs{version};
-    $self->_set_base_uri( $attribs{base_uri} ) if $attribs{base_uri};
-    $self->_set_title( $attribs{title} )       if $attribs{title};
+    # TODO: All of this 'simple' list should be attributes and all should be 
+    # writable to allow this tool to be used to _generate_ RAML as well
+    $self->_set_version( $attribs{version} )     if $attribs{version};
+    $self->_set_base_uri( $attribs{base_uri} )   if $attribs{base_uri}; # https://na1.salesforce.com/services/data/{version}/chatter - also baseUriParameters - not so simple
+    $self->_set_title( $attribs{title} )         if $attribs{title};
+    $self->_set_title( $attribs{protocols} )     if $attribs{protocols}; # array
+    $self->_set_title( $attribs{documentation} ) if $attribs{documentation}; # array of hashrefs
+    $self->_set_title( $attribs{media_type} )    if $attribs{mediaType};
+    $self->_set_title( $attribs{description} )   if $attribs{description};
+    $self->_set_title( $attribs{securedBy} )     if $attribs{securedBy}; # array of securitySchemes
+
+    # TBD: Handling how types and schemas coexist
 
     # These are all collections, individual items of which may have been
     # refactored out to seperate files; make sure we've read them in if so
+    # TBD:  resourceTypes annotationTypes securitySchemes  baseUriParameters uses and (<annotationName>)
     foreach my $listname ( qw(schemas traits types)) {
         my $i = -1;
 
@@ -306,6 +330,12 @@ sub _compile_resource {
         ? $resource->{parent_path} . $uri
         : $uri;
 
+
+    # NOTE: While this may use hashes and keys internally, RAML requires all
+    # processors to "preserve the order of properties of the same kind within the
+    # same node of the definition tree"; so methods (endpoints) on a resource
+    # must have the order in which they appeared in the doc preserved. Probably
+    # relevant to re-serializing the spec?
 
     # Go through the resource data and compile the parameters needed to instantiate
     # new Endpoint objects. As nested resources are discovered, set the parent path
