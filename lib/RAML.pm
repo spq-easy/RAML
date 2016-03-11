@@ -7,6 +7,8 @@ use namespace::clean;
 use YAML::Syck;
 use Data::Dumper; # XXX remove before shipping!
 
+use RAML::Endpoint;
+
 =head1 NAME
 
 RAML - RESTful API Markup Language
@@ -66,15 +68,31 @@ TBD: Method list
 
 =head1 ATRIBUTES
 
-=head2 valid
 
-Is the RAML considered valid. 
-TBD: Make this private and expose with is_valid method instead?
+=head2 title
 
 =cut
-has valid => (
-    is      => 'rwp',
-    default => 1,
+has title => (
+    is   => 'rw',
+    lazy => 1,
+);
+
+
+=head2 description
+
+=cut
+has description => (
+    is   => 'rw',
+    lazy => 1,
+);
+
+
+=head2 documentation
+
+=cut
+has documentation => (
+    is   => 'rw',
+    lazy => 1,
 );
 
 
@@ -84,16 +102,7 @@ API version
 
 =cut
 has version => (
-    is   => 'rwp',
-    lazy => 1,
-);
-
-
-=head2 title
-
-=cut
-has title => (
-    is   => 'rwp',
+    is   => 'rw',
     lazy => 1,
 );
 
@@ -102,33 +111,81 @@ has title => (
 
 =cut
 has base_uri => (
-    is   => 'rwp',
+    is   => 'rw',
     lazy => 1,
 );
 
-# TBD: Is there any reason to expose the types, schemas, and traits stores?
-=head2 types
+
+=head2 media_type
 
 =cut
+has media_type => (
+    is   => 'rw',
+    lazy => 1,
+);
+
+
+=head2 protocols
+
+=cut
+has protocols => (
+    is   => 'rw',
+    lazy => 1,
+);
+
+
+=head2 secured_by
+
+=cut
+has secured_by => (
+    is   => 'rw',
+    lazy => 1,
+);
+
+
 has types => (
     is      => 'rwp',
     builder => 1,
 );
 
 
-=head2 schemas
+has resource_types => (
+    is      => 'rwp',
+    builder => 1,
+);
 
-=cut
+
 has schemas => (
     is      => 'rwp',
     builder => 1,
 );
 
 
-=head2 traits
-
-=cut
 has traits => (
+    is      => 'rwp',
+    builder => 1,
+);
+
+
+has annotation_types => (
+    is      => 'rwp',
+    builder => 1,
+);
+
+
+has security_schemes => (
+    is      => 'rwp',
+    builder => 1,
+);
+
+
+has uses => (
+    is      => 'rwp',
+    builder => 1,
+);
+
+
+has endpoints => (
     is      => 'rwp',
     builder => 1,
 );
@@ -141,10 +198,10 @@ has _raml_file => (
     init_arg => 'raml',
 );
 
+
 has _raml_path => (
     is       => 'rwp',
     default  => '',
-    init_arg => undef,
 );
 
 
@@ -152,9 +209,15 @@ has _raml_path => (
 ## Builders
 ##
 
-sub _build_schemas { return { } }
-sub _build_traits  { return { } }
-sub _build_types   { return { } }
+sub _build_endpoints        { return { } }
+sub _build_schemas          { return { } }
+sub _build_resource_types   { return { } }
+sub _build_traits           { return { } }
+sub _build_types            { return { } }
+sub _build_annotation_types { return { } }
+sub _build_security_schemes { return { } }
+sub _build_uses             { return { } }
+
 
 sub BUILDARGS {
     my $class = shift;
@@ -197,6 +260,12 @@ sub BUILD {
     }
 
     $self->_process_spec($spec);
+
+    # TBD - if we split out loading from a file to a seperate method, can't
+    # check this here
+    unless ($self->title) {
+        $self->_set_valid(0);
+    }
 }
 
 #
@@ -240,14 +309,14 @@ sub _process_spec {
     # Some things are simple
     # TODO: All of this 'simple' list should be attributes and all should be 
     # writable to allow this tool to be used to _generate_ RAML as well
-    $self->_set_version( $attribs{version} )     if $attribs{version};
-    $self->_set_base_uri( $attribs{base_uri} )   if $attribs{base_uri}; # https://na1.salesforce.com/services/data/{version}/chatter - also baseUriParameters - not so simple
-    $self->_set_title( $attribs{title} )         if $attribs{title};
-    $self->_set_title( $attribs{protocols} )     if $attribs{protocols}; # array
-    $self->_set_title( $attribs{documentation} ) if $attribs{documentation}; # array of hashrefs
-    $self->_set_title( $attribs{media_type} )    if $attribs{mediaType};
-    $self->_set_title( $attribs{description} )   if $attribs{description};
-    $self->_set_title( $attribs{securedBy} )     if $attribs{securedBy}; # array of securitySchemes
+    $self->version( $attribs{version} )             if $attribs{version};
+    $self->base_uri( $attribs{base_uri} )           if $attribs{base_uri}; # https://na1.salesforce.com/services/data/{version}/chatter - also baseUriParameters - not so simple
+    $self->title( $attribs{title} )                 if $attribs{title};
+    $self->protocols( $attribs{protocols} )         if $attribs{protocols}; # array
+    $self->documentation( $attribs{documentation} ) if $attribs{documentation}; # array of hashrefs
+    $self->media_type( $attribs{media_type} )       if $attribs{mediaType};
+    $self->description( $attribs{description} )     if $attribs{description};
+    $self->securedBy( $attribs{securedBy} )         if $attribs{securedBy}; # array of securitySchemes
 
     # TBD: Handling how types and schemas coexist
 

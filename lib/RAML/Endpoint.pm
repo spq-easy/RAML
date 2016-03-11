@@ -1,5 +1,18 @@
 package RAML::Endpoint;
 
+use 5.0014;
+use Moo;
+use namespace::clean;
+
+=head1 SYNOPSIS
+
+TBD: Methods
+* method
+* path
+* name
+* schema
+* traits
+
 =head1 AUTHOR
 
 Sean P Quinlan, C<< <seanq at cpan.org> >>

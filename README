@@ -11,6 +11,8 @@ can use it to get an idea of the module's uses. It is usually a good idea
 to provide version information here so that people can decide whether
 fixes for the module are worth downloading.
 
+cd lib
+perl -MData::Dumper -MRAML -le 'my $r = RAML->new($ARGV[0]); print Dumper($r->endpoints);' ../t/resources/jukebox-api.raml
 
 INSTALLATION
 
